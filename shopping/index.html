@@ -12,34 +12,36 @@
   </head>
   <body>
     <div class="container">
-      <div class="car car-image"></div>
+      <div class="car car-image" id="img"></div>
 
       <div class="car car-description">
-        <p>CAR</p>
+        <p id="cd">CAR</p>
         <h1>Mercedez Benz c300 2022</h1>
         <ul>
           <li class="car">Mileage: 4,000 miles</li>
           <li class="fuel">Fuel: 25mpg</li>
           <li class="shield">Safety: stars xd</li>
         </ul>
-      </div>`
+      </div>
 
       <div class="car car-selection">
         <p>Pick a color:</p>
         <div class="colors-price">
           <div class="colors">
-            <button class="red"></button>
-            <button class="gray"></button>
-            <button class="black"></button>
+            <button class="red" id="rb"></button>
+            <button class="gray" id="gb"></button>
+            <button class="black" id="bkb"></button>
           </div>
 
           <div class="pricing">
-            <p class="price">$134,450</p>
-            <s>$140,500</s>
+            <p class="price">$134,450  <s>$140,500</s></p>
+            
           </div>
         </div>
-        <button class="shopping-cart">Add to Cart</button>
+        <button id="sd" class="shopping-cart">Add to Cart</button>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
