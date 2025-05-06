@@ -1,0 +1,47 @@
+:root {
+    --Dark-Background: #17171C;
+    --Dark-Text: #FFFFFF;
+    --Dark-Button-Medium-Emphasis: #4E505F;
+    --Dark-Button-Low-Emphasis: #2E2F38;
+    --Dark-Button-High-Emphasis: #4B5EFC;
+}
+
+body > *{
+    box-sizing: border-box;
+}
+
+.main-container{
+    margin: 80px auto;
+    width: 40rem;
+    background-color: var(--Dark-Background);
+    grid-template-areas: 
+    "operation"
+    "result"
+    "input";
+
+    display: grid;
+
+    .operation{
+        display: flex;
+        grid-area: operation;
+    }
+
+    .result{
+        display: flex;
+        grid-area: result;
+    }
+
+
+    .input{
+        display: grid;
+        grid-area: input;
+        gap: 3px;
+
+        .row{
+            display: flex;
+
+            justify-content: space-evenly;
+        }
+    }
+}
+

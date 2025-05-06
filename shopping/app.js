@@ -13,7 +13,7 @@ redBtn.addEventListener("click", () => {
 
   pp.style.backgroundColor = "red";
   shopBtn.style.backgroundColor = "red";
-  shopBtn.textContent = "Add to Cart";
+  shopBtn.textContent = "Add to Cart";``
   img.style.backgroundImage = "url(M-2.jpg)";
 });
 
