@@ -6,50 +6,64 @@
     --Dark-Button-High-Emphasis: #4B5EFC;
 }
 
-body > *{
+body>* {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-.main-container{
+.main-container {
     margin: 80px auto;
     width: 40rem;
     background-color: var(--Dark-Background);
-    grid-template-areas: 
-    "operation"
-    "result"
-    "input";
+    grid-template-areas:
+        "operation"
+        "result"
+        "input";
 
     display: grid;
 
-    .operation{
+    .operation {
         display: flex;
         grid-area: operation;
 
-        justify-content: flex-end;
+        align-items: end;
+        justify-content: end;
         padding: 0 2rem;
+
+        #op {
+            color: var(--Dark-Text);
+            font-size: 2.5rem;
+            margin: 7rem 0 0 0;
+        }
     }
 
-    .result{
+    .result {
         display: flex;
         grid-area: result;
 
         justify-content: flex-end;
         padding: 0 2rem;
+
+        #rs {
+            color: var(--Dark-Text);
+            margin: 0 0;
+            font-size: 6rem;
+        }
     }
 
 
-    .input{
+    .input {
         display: grid;
         grid-area: input;
         gap: 3px;
 
-        .row{
+        .row {
             display: flex;
 
             justify-content: space-evenly;
         }
 
-        button{
+        button {
             cursor: pointer;
             border: none;
             background-color: #4B5EFC;
@@ -58,4 +72,3 @@ body > *{
         }
     }
 }
-
