@@ -24,11 +24,17 @@ body > *{
     .operation{
         display: flex;
         grid-area: operation;
+
+        justify-content: flex-end;
+        padding: 0 2rem;
     }
 
     .result{
         display: flex;
         grid-area: result;
+
+        justify-content: flex-end;
+        padding: 0 2rem;
     }
 
 
@@ -41,6 +47,14 @@ body > *{
             display: flex;
 
             justify-content: space-evenly;
+        }
+
+        button{
+            cursor: pointer;
+            border: none;
+            background-color: #4B5EFC;
+            padding: .5rem 1rem;
+            border-radius: 20%;
         }
     }
 }
