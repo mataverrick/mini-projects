@@ -4,6 +4,8 @@
     --Dark-Button-Medium-Emphasis: #4E505F;
     --Dark-Button-Low-Emphasis: #2E2F38;
     --Dark-Button-High-Emphasis: #4B5EFC;
+    background-color: rgb(128, 128, 128);
+    font-size: 10px;
 }
 
 body>* {
@@ -21,54 +23,70 @@ body>* {
         "input";
 
     display: grid;
+    border-radius: 5%;
+}
 
-    .operation {
-        display: flex;
-        grid-area: operation;
+.operation {
+    display: flex;
+    grid-area: operation;
+    align-items: end;
+    justify-content: end;
+    padding: 0 2rem;
+}
 
-        align-items: end;
-        justify-content: end;
-        padding: 0 2rem;
+#op {
+    color: var(--Dark-Text);
+    font-size: 2.5rem;
+    margin: 7rem 0 0 0;
+}
 
-        #op {
-            color: var(--Dark-Text);
-            font-size: 2.5rem;
-            margin: 7rem 0 0 0;
-        }
-    }
+.result {
+    display: flex;
+    grid-area: result;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
 
-    .result {
-        display: flex;
-        grid-area: result;
+#rs {
+    color: var(--Dark-Text);
+    margin: 0 0;
+    font-size: 6rem;
+}
 
-        justify-content: flex-end;
-        padding: 0 2rem;
+.input {
+    display: grid;
+    grid-area: input;
+    gap: 1rem;
+    padding: 2rem;
+}
 
-        #rs {
-            color: var(--Dark-Text);
-            margin: 0 0;
-            font-size: 6rem;
-        }
-    }
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
 
+.row button {
+    color: var(--Dark-Text);
+    display: flex;
+    height: 4.5rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 1.5rem;
+    background: var(--Dark-Button-Low-Emphasis, #2E2F38);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
-    .input {
-        display: grid;
-        grid-area: input;
-        gap: 3px;
+.input .input-row button {
+    background-color: var(--Dark-Button-Medium-Emphasis);
+}
 
-        .row {
-            display: flex;
-
-            justify-content: space-evenly;
-        }
-
-        button {
-            cursor: pointer;
-            border: none;
-            background-color: #4B5EFC;
-            padding: .5rem 1rem;
-            border-radius: 20%;
-        }
-    }
+.input .row button:last-child {
+    background-color: var(--Dark-Button-High-Emphasis);
+    color: white;
 }
